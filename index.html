@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iClever — Clevertech</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+        <div role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="./" class="navbar-brand">iClever — Links to the tools you need</a>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 40px;" class="container">
+
+            <h2 style="margin-top: 40px; margin-bottom: 40px;">View tools for the following purpose: 
+                <select id="role" class="form-control">
+                    <option value="development">Development / Design</option>
+                    <option value="project-management">Project Management</option>
+                    <option value="management">Management</option>
+                </select>
+            </h2>
+
+            <div class="row hide" data-type="management">
+                <div class="col-md-3 well tool">
+                    <h2>CleverBoard <span class="badge badge-primary" title="Management"></span></h2>
+                    <p>Where we plan and adjust expectations for the future of Clevertech.</p>
+                    <p class="go"><a class="btn btn-default" href="http://board.clevertech.biz" role="button">Go there &raquo;</a></p>
+                </div>
+                <div class="col-md-4 well col-md-offset-1 tool">
+                    <h2>CleverBrains <span class="badge badge-primary" title="Management"></span></h2>
+                    <p>Where we review projects and people, assuring Client Satisfaction.</p>
+                    <p class="go"><a class="btn btn-default" href="http://brains.clevertech.biz" role="button">Go there &raquo;</a></p>
+                </div>
+                <div class="col-md-3 well col-md-offset-1 tool">
+                    <h2>New Project <span class="badge badge-primary" title="Management"></span></h2>
+                    <p>The form used to send information to clients when starting a project.</p>
+                    <p class="go"><a class="btn btn-default" href="http://new-project.clevertech.biz" role="button">Go there &raquo;</a></p>
+                </div>
+            </div>
+
+            <div class="row hide" data-type="project-management">
+                <div class="col-md-3 well tool">
+                    <h2>Manager <span class="badge badge-info" title="Project Management"></span></h2>
+                    <p>Where you can log &amp; send daily or weekly updates regarding the projects to the clients &amp; management.</p>
+                    <p class="go"><a class="btn btn-default" href="http://manager.clevertech.biz" role="button">Go there &raquo;</a></p>
+                </div>
+                <div class="col-md-4 well col-md-offset-1 tool">
+                    <h2>Project DEMO <span class="badge badge-info" title="Project Management"></span></h2>
+                    <p>Where we store information to showcase the awesomeness of the stuff we do.</p>
+                    <p class="go"><a class="btn btn-default" href="http://project-demo.clevertech.biz" role="button">Go there &raquo;</a></p>
+                </div>
+                <div class="col-md-3 well col-md-offset-1 tool">
+                    <h2>CleverHire <span class="badge badge-info" title="Project Management"></span></h2>
+                    <p>This is where we accept or reject applications and ask for more information.</p>
+                    <p class="go"><a class="btn btn-default" href="http://hire.clevertech.biz" role="button">Go there &raquo;</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 well tool">
+                    <h2>CleverTime</h2>
+                    <p><a href="https://github.com/clevertech/wiki/wiki/Logging-Time">We need you to log your time daily</a>, so if you haven't yet, please do so now.</p>
+                    <p class="go"><a class="btn btn-default" href="http://time.clevertech.biz" role="button">Go there &raquo;</a></p>
+                </div>
+                <div class="col-md-4 well col-md-offset-1 tool">
+                    <h2>CleverHub</h2>
+                    <p>Where Project Management and organization happens. You're free to use GitHub directly, as long as you work the labels properly.</p>
+                    <p class="go"><a class="btn btn-default" href="http://hub.clevertech.biz" role="button">Go there &raquo;</a></p>
+                </div>
+                <div class="col-md-3 well col-md-offset-1 tool">
+                    <h2>GitHub</h2>
+                    <p>We have a lot of information here. It's getting better and more organized.</p>
+                    <p class="go"><a class="btn btn-default" href="https://github.com/clevertech" role="button">Go there &raquo;</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 well tool">
+                    <h2>HipChat</h2>
+                    <p>What we use to communicate. It's usually better to use the <a href="https://www.hipchat.com/downloads">native apps</a>.</p>
+                    <p class="go"><a class="btn btn-default" href="https://www.hipchat.com/" role="button">Go there &raquo;</a></p>
+                </div>
+                <div class="col-md-4 well col-md-offset-1 tool">
+                    <h2>Aloha!</h2>
+                    <p>Where your day begins. Where we'll publish internal announcements for Clevertech, and anyone can talk about anything.</p>
+                    <p class="go"><a class="btn btn-default" href="http://aloha.clevertech.biz" role="button">Go there &raquo;</a></p>
+                </div>
+                <div class="col-md-3 well col-md-offset-1 tool">
+                    <h2>Wiki</h2>
+                    <p>We have a lot of information here. It's getting better and more organized.</p>
+                    <p class="go"><a class="btn btn-default" href="https://github.com/clevertech/wiki/wiki" role="button">Go there &raquo;</a></p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</html>
