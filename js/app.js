@@ -17,9 +17,15 @@
         });
 
         // Get role from local storage
-        if ( storage && storage.getItem ) {
+        if ( storage && storage.getItem && storage.getItem('role') ) {
             filterTools( storage.getItem('role') );
             $( '#role' ).val( storage.getItem('role') );
+        }
+        
+        // Select "Development" by default, if nothing was found/selected
+        if ( $('#role option:selected').length === 0 ) {
+            $( '#role' ).val( 'development' );
+            storage.setItem( 'role', 'development' );
         }
     });
 
